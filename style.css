@@ -1,0 +1,34 @@
+/*  Created by Truzz TruzzBlogg                 
+    Youtube Link: https://youtu.be/Ln7c6fF8ltw   */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    height:100vh;
+}
+
+#counter {
+    width: 480px;
+    height: 260px;
+}
+
+#show {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+#resetBtn {
+    color:white;
+    font-weight: bold;
+    background: linear-gradient(#e6c057, #a307d3);
+    border-radius: 20px;
+    padding: 10px 20px;
+}
