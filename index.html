@@ -16,13 +16,15 @@
 
 <body>
     <div class="container">
-        <h2>Haz click en la imagen</h2>
+        <h2>Haz click en la imagen para empezar</h2>
         
         <!-- Al hacer click en la imagen, llama a la funcion JS incrementarContador() -->
         <img id="imagenClick" src="./img/badbanana.png" onclick="incrementarContador()">
         
         <!-- Aquí mostraré el valor del contador -->
-        <div id="puntos">0</div>
+        <p>
+            PUNTOS: <div id="puntos">0</div> TIEMPO: <div id="crono">10</div>
+        </p>
 
         <!-- El botón reset al principio está oculto por estilo, luego el JS lo muestra -->
         <!-- Al hacer click en el botón, llama a la funcion JS resetearContador() -->

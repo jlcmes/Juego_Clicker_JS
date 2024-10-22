@@ -16,10 +16,10 @@
 }
 
 #imagenClick {
-    width: 480px;
+    width: 400px;
 }
 
-#puntos {
+#puntos, #crono {
     font-weight: bold;
     font-size: 3rem;
 }
