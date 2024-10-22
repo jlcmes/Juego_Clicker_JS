@@ -1,24 +1,33 @@
+<!--  Código original:                             -->
 <!--  Created by Truzz TruzzBlogg                  -->
 <!--  Youtube Link: https://youtu.be/Ln7c6fF8ltw   -->
+<!--  Modificado por Jose Luis Cebrian Marquez     -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detectar click en Imagen - Contador</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Clicker</title>
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
 
 <body>
     <div class="container">
-        <h2>Detect clicks on image</h2>
-        <img id="counter" src="./sample_img.PNG" onclick="contadorClick()" alt="Badge Logo TruzzBlogg">
-        <div id="show"></div>
-        <button type="button" onclick="resetCounter()" id="resetBtn" style="display: none;">Reset Counter</button>
+        <h2>Haz click en la imagen</h2>
+        
+        <!-- Al hacer click en la imagen, llama a la funcion JS incrementarContador() -->
+        <img id="imagenClick" src="./img/badbanana.png" onclick="incrementarContador()">
+        
+        <!-- Aquí mostraré el valor del contador -->
+        <div id="puntos">0</div>
+
+        <!-- El botón reset al principio está oculto por estilo, luego el JS lo muestra -->
+        <!-- Al hacer click en el botón, llama a la funcion JS resetearContador() -->
+        <button id="botonReset" onclick="resetearContador()" style="display: none;">Resetear Contador</button>
     </div>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="./js/codigo.js"></script>
 </body>
 </html>
